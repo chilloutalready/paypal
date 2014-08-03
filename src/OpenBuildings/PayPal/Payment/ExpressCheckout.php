@@ -68,7 +68,7 @@ class Payment_ExpressCheckout extends Payment {
             $defaultParams['L_PAYMENTREQUEST_0_NAME' . $index] = $item["name"];
             $defaultParams['L_PAYMENTREQUEST_0_AMT' . $index]  = $item["price"];
             $defaultParams['L_PAYMENTREQUEST_0_QTY' . $index]  = $item["quantity"];
-            $defaultParams['L_PAYMENTREQUEST_0_ITEMCATEGORY' . $index] = "Digital";
+            $defaultParams['L_PAYMENTREQUEST_0_ITEMCATEGORY' . $index] = "Physical";
 
             $totalPrice += $item["price"] * $item["quantity"];
         }
